@@ -1,0 +1,483 @@
+.wrapper{
+    width:1300px;
+    display:block;
+    clear: both;
+    font-family: DM Sans;
+    font-style:normal;
+    color: #FFFFFF;    
+}
+.flex{
+    display: flex;
+    position: absolute;
+    top:80px;
+    width: 100px;
+    height: 39px;
+    left: 100px;    
+    font-weight: 700;    
+    line-height: 39px;
+}
+.head{
+    position: absolute;
+    top:-1px;    
+}
+.head img{
+    position: relative;
+    display: block;
+    left:0px;
+    width:1350px;
+    height: 380px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.headtext{
+    position: absolute;
+    width: 53px;
+    height: 39px;
+    left: 100px;    
+    font-weight: 700;    
+    line-height: 39px;
+}
+.iris{
+    position: absolute;
+    text-transform: uppercase;
+    top: 19px;
+    font-size: 33px;
+    opacity: 0;
+    animation: enter 5s forwards ease ;
+}
+@keyframes enter {
+        0% {
+           opacity: 0;
+        }
+
+    100% {
+       opacity: 1;
+
+    }
+}
+.hello{
+    font-size: 24px;
+    opacity: 0;
+    animation: enter 5s forwards ease ;
+}
+#hand_vector{
+    position: absolute;
+    left: 90px;
+    opacity: 0;
+    animation: enter 5s forwards ease ;
+}
+.head_detail{
+    position: absolute;
+    width: 290px;
+    height: 46px;
+    left: 98px;
+    top: 135px;
+    font-size:20px;
+    font-weight:500;
+    opacity: 0;
+    animation: enter 5s forwards ease ;
+}
+.chatbot_wrapper{
+    position: absolute;
+    top:181px;
+    left:100px;
+    z-index: 1;
+    opacity: 0;
+    animation: enter 1s forwards ease ;
+}
+.chatbot_icon{
+    position: absolute;
+    top:230px;
+    left:144px;
+    z-index: 1;
+    opacity: 0;
+    animation: enter 1s forwards ease ;
+}
+.box{
+    position: absolute;
+    width: 1200px;
+    height: 550px;
+    right:75px;
+    top: 250px;
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    animation: entrybox 2s ease;
+}
+
+@keyframes entrybox {
+    0% {
+       opacity: 0;
+       display: none;
+    }
+    10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%{
+        opacity: 0;
+        display: none;
+    }
+     100% {
+        opacity: 1;
+        transform: translateY(0);
+        display: block;
+    }
+ } 
+.flex-wrapper{
+    display: flex;
+    position: absolute;
+    left: 39px;
+    top: 78px;
+}
+.box .question_head{
+    font-weight: 500;
+    font-size: 30px;
+    color: #2D2D2D;
+}
+.box .question_icon{
+    padding-top:8px;
+    padding-left:10px;
+}
+.box .box-box{
+    background: #FFFFFF;
+    border: 1px solid #E1E1E1;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    width: 900px;
+    height: 50px;
+    animation:box-box 10s ease-in ;
+}
+@keyframes box-box{
+    from{
+        transition: scaleY(-10px);
+    }
+    to{
+        transform: scaleY(0px);
+    }
+}
+.box .question1-box{
+    position: absolute;
+    left: 39px;
+    top: 165px; 
+    cursor:pointer;  
+    opacity: 0; 
+    animation: enter1 0.75s forwards 3s ease ;
+}
+@keyframes enter1{
+    100%{
+        opacity: 1;
+    }
+}
+.box .question2-box{
+    position: absolute;
+    left: 39px;
+    top: 230px;
+    cursor:pointer;
+    opacity: 0;
+    animation: enter2 0.75s forwards 4s ease ;
+}
+@keyframes enter2{
+    100%{
+        opacity: 1;
+    }
+}
+.box .question3-box{
+    position: absolute;
+    left: 39px;
+    top: 295px;
+    cursor:pointer;
+    opacity: 0;
+    animation: enter3 0.75s forwards 5s ease ;
+}
+@keyframes enter3{
+    100%{
+        opacity: 1;
+    }
+}
+.box .question4-box{
+    position: absolute;
+    left: 39px;
+    top: 360px;
+    cursor:pointer;
+    opacity: 0;
+    animation: enter1 0.75s forwards 6s ease ;
+}
+@keyframes enter1{
+    100%{
+        opacity: 1;
+    }
+}
+
+#circle{
+    position: absolute;
+    top:11px;
+    left:11px;
+}
+.content{
+    display: inline-block;
+    color:#000000;
+    position: absolute;
+    left:50px;
+    top:12px;
+    font-size: 18px;
+}
+.new_conv{
+    position: absolute;
+    cursor:pointer;
+    width: 30vw;
+    height: 44px;
+    left: 340px;
+    top: 711px;
+    background: #FFFFFF;
+    border: 1px solid #D1D1D1;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 100px;    
+    opacity: 0;
+    animation: enter1 0.75s forwards 7s ease ;
+}
+@keyframes enter1{
+    100%{
+        opacity: 1;
+    }
+}
+
+#chat-icon{
+    position: absolute;
+    top:10px;
+    left:70px;
+}
+.new_conv-text{
+    position: absolute;
+    cursor:pointer;
+    width: 225px;
+    height: 18px;
+    text-align:center;
+    left: 90px;
+    top: 12px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 18px;
+    color:#2d2d2d;
+
+}
+
+@media (max-width: 1200px){
+    .box-box{
+        max-width:93vw;
+    }
+}
+
+@media (max-width: 319px){
+    .head img{
+        width:auto;    
+    }
+    .iris, .flex, .head_detail{
+        left:30px;
+    }
+    .head_detail{
+        font-size:6vw;
+        max-width:245px;
+    }
+    .box{
+        right:0px;
+        height:435px;
+    }
+    .chatbot_wrapper, .chatbot_icon{
+        left:0px;
+    }
+    .chatbot_icon{
+        left:45px;
+        display:block;
+    }
+    .content{
+        font-size:11px;
+        left:42px;
+        top:13px;
+    }
+    .box .question_head{
+        font-size:16px;
+        margin-left:-15px;
+    }
+    .box .question_icon{
+        padding-top:0px;
+    }
+    .box .question1-box, .box .question2-box, .box .question3-box, .box .question4-box{
+        left:11px;
+    }
+    .box .question1-box{
+        top:123px;
+    }
+    .box .question2-box{
+        top:182px;
+    }
+    .box .question3-box{
+        top:241px;
+    }
+    .box .question4-box{
+        top:300px;
+    }
+    .new_conv{
+        left:35px;
+        width:74vw;
+        top:618px;
+    }
+    #chat-icon{
+        width:19px;
+        left:20px;
+    }
+    .new_conv-text{        
+        left:3px;
+        font-size:11px;
+    }
+}
+
+@media(min-width:320px) and (max-width: 388px){
+    .head{
+        width: 388px;
+    }
+    .box{
+        left:0px;
+        max-width:388px;
+        height:470px;
+    }
+}
+
+@media(min-width:389px) and (max-width: 480px){
+    .head{
+        width: 480px;
+    }
+    .box{
+        left:0px;
+        max-width:480px;
+        height:470px;
+    }
+}
+
+@media(min-width:320px) and (max-width: 480px){
+    .head img{
+        width:auto;
+    }
+    .headtext, .flex, .head_detail{
+        left:45px;
+    }
+    .chatbot_wrapper{
+        left:45px;
+        width:110px;
+
+    }
+    .chatbot_icon{
+        left:74px;
+        width:50px;
+        top:228px;
+    }
+    .flex-wrapper{
+        top:50px;
+        left:15px;
+    }
+    .box .question_head{
+        font-size:22px;
+    }
+    .box .question_icon{
+        padding-top:0px;
+    }
+    
+    #questions-block{
+        position: inherit;
+        margin-top:-55px;
+
+    }
+    .box .question1-box, .box .question2-box, .box .question3-box, .box .question4-box{
+        left:10px;
+    }
+    .content{
+        font-size:13px;
+        left:42px;
+        top:13px;
+    }
+    .new_conv{
+        left:40px;
+        top:640px;
+        width:73%;
+    }
+    #chat-icon{
+        left:20px;
+    }
+    .new_conv-text{
+        left:40px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 656px){ 
+    .head{
+        width:656px;
+    }
+    .box{
+        left:0px;
+        max-width:656px;
+        height:530px;
+    }
+    .new_conv{
+        left:98px;
+        top:700px;
+        width:65%;
+    }
+    #chat-icon{
+        left:55px;
+    }
+    .new_conv-text{
+        left:75px;
+    }
+}
+@media (min-width: 656px) and (max-width: 1024px){     
+    .box{
+        left:0px;
+        height:530px;
+    }
+    .new_conv{
+        left:177px;
+        top:700px;
+        width:50%;
+    }
+    #chat-icon{
+        left:25%;
+    }
+    .new_conv-text{
+        left:30%;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1200px){     
+    .box{
+        left:0px;
+        height:530px;
+    }
+    .new_conv{
+        left:178px;
+        top:700px;
+        width:40%;
+    }
+    #chat-icon{
+        left:25%;
+    }
+    .new_conv-text{
+        left:30%;
+    }
+}
+@media (min-width: 1201px) and (max-width: 1300px){ 
+    
+    .box{
+        left:40px;
+        height:530px;
+    }
+    .new_conv{
+        left:250px;
+        top:700px;
+        width:40%;
+    }
+    #chat-icon{
+        left:33%;
+    }
+    .new_conv-text{
+        left:37%;
+    }
+}
